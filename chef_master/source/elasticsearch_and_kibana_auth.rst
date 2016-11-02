@@ -67,4 +67,4 @@ If you wish to disable authentication for either Kibana or Elasticsearch, you ma
 * ``elasticsearch['enable_auth']``: If ``true``, a valid user/enterprise/token must be supplied in a cookie or in HTTP headers for the request to be accepted and passed to Elasticsearch. If ``false``, all Elasticsearch queries are permitted without authentication. Default: ``true``
 * ``kibana['enable_auth']``: If ``true``, a valid user/enterprise/token must be supplied in a cookie or in HTTP headers for access to be granted to the Kibana UI. If ``false``, all Kibana access is permitted without authentication. Default: ``true``
 
-**WARNING:** It is strongly recommended that authentication to Elasticsearch and Kibana remain enabled at all times. Without authentication, any user with network access to your Automate server will be able to view any available Visibility data.
+.. warning:: It is strongly recommended that authentication to Elasticsearch and Kibana remain enabled at all times. Without authentication, any user with network access to your Automate server will be able to view any available Visibility data.
